@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>http://example.org/post/bookmarks/</loc>
+    <lastmod>2016-12-20T14:09:52+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/post/golang/</loc>
+    <lastmod>2016-12-20T14:06:16+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/post/hugo/</loc>
+    <lastmod>2016-12-20T13:51:14+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/</loc>
+    <lastmod>2016-12-20T14:09:52+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.org/post/</loc>
+    <lastmod>2016-12-20T14:09:52+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+</urlset>

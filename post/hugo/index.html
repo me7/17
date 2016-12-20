@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html class="no-js" lang="tha-th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>hugo</title>
+
+<meta name="generator" content="Hugo 0.19-DEV" />
+
+<link rel="dns-prefetch" href="//fonts.googleapis.com" />
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,600" type="text/css" media="all" />
+<link rel="stylesheet" href="http://example.org/css/style.css" type="text/css" media="all" />
+<script type="text/javascript" src="http://example.org/js/jquery.js"></script>
+<script type="text/javascript" src="http://example.org/js/scripts.js"></script>
+<!--[if lt IE 9]>
+	<script src="http://example.org/js/css3-mediaqueries.js"></script>
+<![endif]-->
+</head>
+<body id="mr-mobile" class="home blog mr-right-sb" itemscope="itemscope" itemtype="http://schema.org/WebPage">
+	<div class="mr-container mr-container-outer">
+		<div class="mr-header-mobile-nav clearfix"></div>
+			<header class="mr-header" itemscope="itemscope" itemtype="http://schema.org/WPHeader">
+				<div class="mr-container mr-container-inner mr-row clearfix">
+					<div class="mr-custom-header clearfix">
+						<div class="mr-site-identity">
+							<div class="mr-site-logo" role="banner" itemscope="itemscope" itemtype="http://schema.org/Brand">
+								<div class="mr-header-text">
+									<a class="mr-header-text-link" href="http://example.org/" title="My New Hugo Site" rel="home">
+										<h1 class="mr-header-title">My New Hugo Site</h1>
+										
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="mr-main-nav-wrap">
+					<nav class="mr-navigation mr-main-nav mr-container mr-container-inner clearfix" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
+	<div class="menu">
+		<ul>
+		
+		</ul>
+	</div>
+</nav>
+				</div>
+			</header>
+		<div class="mr-wrapper clearfix">
+
+
+<div class="mr-content" id="main-content" role="main" itemprop="mainContentOfPage">
+	<article class="post">
+		<header class="entry-header clearfix">
+			<h1 class="entry-title">hugo</h1>
+			<p class="mr-meta entry-meta">
+				<svg class="icon icon-time" height="14" viewBox="0 0 16 16" width="14" xmlns="http://www.w3.org/2000/svg"><path d="m8-.0000003c-4.4 0-8 3.6-8 8 0 4.4000003 3.6 8.0000003 8 8.0000003 4.4 0 8-3.6 8-8.0000003 0-4.4-3.6-8-8-8zm0 14.4000003c-3.52 0-6.4-2.88-6.4-6.4000003 0-3.52 2.88-6.4 6.4-6.4 3.52 0 6.4 2.88 6.4 6.4 0 3.5200003-2.88 6.4000003-6.4 6.4000003zm.4-10.4000003h-1.2v4.8l4.16 2.5600003.64-1.04-3.6-2.1600003z"/></svg>
+				<time class="entry-meta-date updated" datetime="2016-12-20 13:51:14 &#43;0700 ICT">December 20, 2016</time>
+			</p>
+		</header>
+		<div class="entry-content clearfix">
+			
+			
+
+<p>This page describe how to use hugo for generate static website that can host on github page, s3, dropbox or whatever host you want</p>
+
+<h2 id="quick-start">quick start</h2>
+
+<ul>
+<li><code>go get github.com/spf13/hugo</code> to get hugo.exe</li>
+<li><code>hugo new site wisdom</code> to create site name wisdome</li>
+<li><code>cd wisdom</code></li>
+<li><code>hugo new post/hugo.md</code> to create post name hugo</li>
+<li>edit hugo.md as you wish</li>
+<li>go to <a href="https://themes.gohugo.io/">https://themes.gohugo.io/</a> to get your theme e.g. mainroad
+
+<ul>
+<li><code>cd themes</code></li>
+<li><code>git clone https://github.com/vimux/mainroad</code></li>
+<li><code>cd ..</code> then edit config.toml to add <code>theme = mainroad</code></li>
+<li>more config like paginate, author, widget look at <a href="http://themes.gohugo.io/mainroad/">http://themes.gohugo.io/mainroad/</a></li>
+</ul></li>
+<li><code>hugo server -D</code> then go to <a href="http://localhost:1313">http://localhost:1313</a> (-D is build draft page)</li>
+</ul>
+
+<h2 id="my-modification">my modification</h2>
+
+<ol>
+<li>add css for code block by go to themes/static/css/style.css then add
+<code>
+code {
+background-color: rgba(0,0,0,0.1);
+}
+</code></li>
+</ol>
+
+<h2 id="make-it-become-my-github-account-page-format-not-work">make it become my github account page <strong>format not work</strong></h2>
+
+<ul>
+<li>see <a href="https://pages.github.com/">https://pages.github.com/</a> for references</li>
+<li>create me7.gihub.io repo</li>
+<li>run <code>hugo</code> to generate site <strong>public</strong> folder</li>
+<li><code>cd public</code></li>
+<li><code>git init</code></li>
+<li><code>git remote add origin git@github.com:me7/me7.github.io.git</code></li>
+<li><code>git add -all</code></li>
+<li><code>git commit -m &quot;fisrt commit&quot;</code></li>
+<li><code>git push origin master</code></li>
+</ul>
+
+		</div>
+		
+	</article>
+	
+	
+	
+</div>
+
+<aside class="mr-sidebar" itemscope="itemscope" itemtype="http://schema.org/WPSideBar">
+	
+	
+
+	
+	
+</aside>
+	</div>
+		<div class="mr-copyright-wrap">
+			<div class="mr-container mr-container-inner clearfix">
+				<p class="mr-copyright">&copy; 2016 My New Hugo Site. Based on <a href="//wordpress.org/themes/mh-magazine-lite/" target="_blank" rel="nofollow noopener noreferrer">MH Magazine lite</a>.</p>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
